@@ -1,16 +1,127 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
 body{
-    background-color:rgba(0, 79, 68, 1);
+    background:#005548;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+header{
+    min-height:100vh;
+}
+
 .container{
-    max-width: 1000px;
-    margin: auto;
+    max-width:1200px;
 }
-img{
-    width: 50px;
-    height: 55pxpx;
+
+.navbar-brand{
+ flex: 0 0 auto;
+}
+
+.navbar-nav img{
+    width:22px;
+    height:22px;
+}
+
+.navbar-brand img{
+    width:180px;
+    height:auto;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.hero{
+    margin-top:70px;
+}
+
+.secondDiv{
+    border:2px solid #39b8ff;
+    padding:35px;
+    color:white;
+}
+
+.secondDiv h1{
+    font-size:65px;
+    font-weight:300;
+    line-height:1;
+}
+
+.secondDiv hr{
+    width:120px;
+    border:1px solid white;
+    margin:30px 0;
+}
+
+.secondDiv p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.shop-btn{
+    background:white;
+    border:none;
+    padding:12px 30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.buttons a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero-img{
+    width:100%;
+    max-width:650px;
+}
+.plant-section{
+    background:#eef9f7;
+    padding:80px 0;
+}
+
+.plant-img{
+    width:100%;
+    display:block;
+}
+.shipping-section{
+    background:#fff;
+    padding:70px 0;
+}
+
+.shipping-box{
+    position:relative;
+}
+
+.shipping-img{
+    width:100%;
+    display:block;
+}
+
+.shipping-text{
+    position:absolute;
+    top:29%;
+    left:50px;
+}
+
+.shipping-text h2{
+    font-size:48px;
+    color:#9b6b5f;
+    margin-bottom:15px;
+}
+
+.shipping-text p{
+    color:#8d6b63;
+    margin-bottom:10px;
 }
