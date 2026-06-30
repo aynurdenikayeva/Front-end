@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    border: 50%;
+    border-radius: 20px 10px;
+     line-height: 1.5
+
+}
+div{
+   background-color: #fff;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 500px;
+    padding: 60px;
+    margin: 30px;
+    text-align: center;
+}

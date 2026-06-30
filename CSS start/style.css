@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#form {
+    font-size: 40px;
+    text-align: center;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+#cedvel{
+   width: 100%;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #2980b9;
+    color: white;
+    border-radius: 6px;
+    
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+.left-btn{
+    float: right;
+}

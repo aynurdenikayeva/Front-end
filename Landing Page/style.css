@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(0, 79, 68, 1);
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+img{
+    width: 50px;
+    height: 55pxpx;
+}

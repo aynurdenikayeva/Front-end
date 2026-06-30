@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Başlıq hissə- logo */
+.header{
+    display: flex; /* logo və menu-ni bir xəttə (yan-yana) düzür */
+    justify-content: space-between; /* logo solda, menu sağda olur */
+    align-items: center; /* şaquli olaraq ortalayır */
+    padding: 15px 50px; /* yuxarı-aşağı 15px, sağ-sol 50px boşluq verir */
+    background-color: #f5f5f5; /* header arxa fon rəngi açıq boz edir */
+}
+
+.logo{
+    width: 100px; /* logo ölçüsünü 100px edir (eni) */
+}
+
+.nav-menu ul{
+    display: flex; /* menu elementlərini (li) yan-yana düzür */
+    list-style: none; /* siyahının nöqtələrini (•) silir */
+    gap: 25px; /* menu item-lar arasında 25px boşluq verir */
+}
+
+.nav-menu a{
+    text-decoration: none; /* linklərin alt xəttini silir */
+    color: black; /* link rəngini qara edir */
+    font-size: 18px; /* yazı ölçüsünü böyüdür */
+    font-weight: bold; /* yazını qalın edir */
+}
+/*indexde yazi olan hisse*/
+.about{
+    max-width: 900px;        /* məzmunu daraldır, oxunaqlı edir */
+    margin: 40px auto;       /* ortalayır */
+    padding: 20px;           /* iç boşluq verir */
+    line-height: 1.6;        /* mətn arası boşluq */
+    text-align: justify;     /* mətni səliqəli edir */
+}
+.about span{
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+/*qaleriya*/
+.gallery{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.gallery h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.gallery-grid{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* kiçik ekranda aşağı düşsün */
+}
+
+.gallery-grid img{
+    width: 23%;            /* eni % ilə */
+    border: 3px solid #4CAF50; /* ətraf border */
+    border-radius: 15px;   /* küncləri yumrulaşdırır */
+    object-fit: cover;     /* şəkli səliqəli kəsir */
+}
+/*atraksiyom*/
+.attractions{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.attractions h2{
+    margin-bottom: 15px;
+}
+
+.attraction-list{
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.video iframe{
+    max-width: 100%;
+    border-radius: 10px;
+}
+/*ticket*/
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.card{
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin: 10px 0;
+}
+
+.card p{
+    font-size: 14px;
+    color: #555;
+}
+
+.card i{
+    font-size: 20px;
+    margin: 10px 0;
+    color: green;
+}
+
+.card button{
+    padding: 8px 15px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+}
+ .ticket-form{
+       width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.ticket-form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ticket-form button{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;  /* yuxarıdan boşluq verir */
+}
+select{
+    width: 100%;
+    padding: 8px;
+}
+/*qayda*/
+.rules{
+    margin: 30px;
+}
+
+.rules ul{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.rules li{
+    margin: 5px 0;
+}

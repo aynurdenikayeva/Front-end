@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px; /* Ekran çox böyük olanda saytın sağa-sola dağılmaması üçün limit */
+    margin: 0 auto;
+}
+
+/* Kursun əsas məlumat başlığı (Online course, saat və s.) */
+.title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 60px; 
+}
+
+.title img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Birinci ana ekran */
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.first .text {
+    max-width: 600px;
+}
+
+.first h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.first p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.first img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Tarkovskinin sitat bloku */
+.second {
+    border-radius: 12px;
+    background-color: #1E4681;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    color: white; 
+    box-shadow: 0 4px 15px rgba(30, 70, 129, 0.2);
+}
+
+.second p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.second span {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+}
+
+/* Kurs haqqında bölməsi */
+.about {
+    margin-top: 80px;
+}
+
+.about h1, .format h1, .learn h1, .program h1, .reviews h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.01;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    max-width: 650px;
+}
+
+.about-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.about-info {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.info h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1E4681;
+}
+
+.info p {
+       width: 86.87px;
+    height: 22.59px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Dərs formatı kartları */
+.format {
+    margin-top: 100px;
+}
+
+.format-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.card h3 {
+    font-family: "Roboto", sans-serif;
+    color: #1E4681;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+ 
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Nələr öyrənəcəyik (Siyahı) */
+.learn {
+    margin-top: 100px;
+}
+
+.learn ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.learn li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* Kursun Proqramı (Grid sistemi) */
+.program {
+    margin-top: 100px;
+}
+
+.program-cards {
+    display: grid;
+    /* Ekranın ölçüsünə görə kartların sayını avtomatik tənzimləyir (Responsiveness) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+}
+
+.program-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.program-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.program-card h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 20px 10px 20px;
+}
+
+.program-card p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 0 20px 20px 20px;
+    color: #666;
+    margin-top: auto; /* Tarixi kartın ən aşağısına bərabərləyir */
+}
+
+/* Rəylər bölməsi */
+.reviews {
+    margin-top: 100px;
+    background: #F5F5F7;
+    padding: 60px 40px;
+    border-radius: 30px;
+}
+
+.review {
+    max-width: 800px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.05);
+}
+
+.review p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.user {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user div {
+    margin-left: 20px;
+}
+
+.user h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.user div img {
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+}
